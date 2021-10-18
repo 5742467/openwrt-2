@@ -54,3 +54,9 @@ sed -i 's/"带宽监控"/"监控"/g' `grep "带宽监控" -rl ./`
 sed -i 's/"Argon 主题设置"/"Argon设置"/g' `grep "Argon 主题设置" -rl ./`
 
 echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
+
+# 网易云音乐
+git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic.git package/mine/luci-app-unblockneteasemusic
+
+# 网易云音乐GoLang版本
+git clone https://github.com/project-openwrt/luci-app-unblockneteasemusic-go.git package/mine/luci-app-unblockneteasemusic-go
